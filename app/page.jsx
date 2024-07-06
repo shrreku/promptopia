@@ -1,7 +1,11 @@
-import Feed from '@components/Feed'
+//import Feed from '@components/Feed'
+import dynamicImport from 'next/dynamic';
 
 export const dynamic = "force-dynamic";
-
+const Feed = dynamicImport(() => import('../components/Feed'), {
+  ssr: false,
+  loading: () => <p>Loading...</p>,
+});
 const Home = () => {
     return(
     <section className='w-full flex-center flex-col'>
