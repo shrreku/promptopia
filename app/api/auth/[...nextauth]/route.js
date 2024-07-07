@@ -1,4 +1,5 @@
 import NextAuth from 'next-auth';
+import 'dotenv/config';
 import GoogleProvider from 'next-auth/providers/google';
 
 import User from '@models/user';

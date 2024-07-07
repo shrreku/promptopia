@@ -1,4 +1,4 @@
-//import Feed from '@components/Feed'
+// import Feed from '@components/Feed'
 import dynamicImport from 'next/dynamic';
 
 export const dynamic = "force-dynamic";
